@@ -12,12 +12,12 @@ class ofxTimer{
 public:
     ofxTimer();
     ~ofxTimer();
-    void setup(float _totTime, bool _autoUpdate=true);
-    void update();
+    virtual void setup(float _totTime, bool _autoUpdate=true);
+    virtual void update();
     
     void setAutoUpdate(bool b);
-    void start();
-    void stop();
+    virtual void start();
+    virtual void stop();
     
     inline bool isAutoUpdating(){return bAutoUpdate;}
     inline float getPeriod(){return totTime;}
