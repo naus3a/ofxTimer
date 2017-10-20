@@ -18,7 +18,9 @@ public:
     void setAutoUpdate(bool b);
     virtual void start();
     virtual void stop();
-    
+  
+    inline bool isRunning(){return bRunning;}
+  
     inline bool isAutoUpdating(){return bAutoUpdate;}
     inline float getPeriod(){return totTime;}
     inline float getPct(){return bRunning?curPct:0.0;}
