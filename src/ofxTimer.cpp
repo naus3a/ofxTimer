@@ -11,6 +11,7 @@ ofxTimer::ofxTimer(){
     setAutoUpdate(true);
     totTime = 0.0;
     curPct=0.0;
+    bRunning = false;
 }
 
 ofxTimer::~ofxTimer(){
